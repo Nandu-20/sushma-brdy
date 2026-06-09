@@ -1,0 +1,152 @@
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    color:white;
+    background:#000;
+}
+
+/* Intro Page */
+.hero{
+    height:100vh;
+    background:url("images/bg.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.65);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    width:90%;
+    max-width:700px;
+}
+
+.overlay h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.overlay p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+button{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* Memory Section */
+#memorySection{
+    min-height:100vh;
+    padding:40px 20px;
+    background:url("images/bg.jpg") center center/cover fixed;
+}
+
+.memory-card{
+    max-width:900px;
+    margin:auto;
+    background:rgba(0,0,0,0.55);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+}
+
+
+#memoryText{
+    white-space: pre-line;
+    line-height: 1.9;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    font-weight: 500;
+}
+
+/* Final Page */
+#finalPage{
+    min-height:100vh;
+    text-align:center;
+    padding:40px 20px;
+    background:url("images/bg.jpg") center center/cover fixed;
+}
+
+#finalPage h1{
+    margin-bottom:20px;
+    font-size:3rem;
+}
+
+#finalPage p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+    margin:30px auto;
+    max-width:1100px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+video{
+    width:90%;
+    max-width:900px;
+    border-radius:20px;
+    margin-top:25px;
+}
+
+#finalPage h2{
+    margin-top:30px;
+    line-height:1.6;
+    font-size:1.8rem;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size:2rem;
+    }
+
+    #memoryText{
+        font-size:1rem;
+    }
+
+    #finalPage h1{
+        font-size:2rem;
+    }
+
+    #finalPage h2{
+        font-size:1.3rem;
+    }
+}
+```

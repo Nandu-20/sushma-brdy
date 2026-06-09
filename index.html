@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 19th Birthday Sushma Ji ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/birthday.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Intro Page -->
+    <div id="intro" class="hero">
+        <div class="overlay">
+            <h1>Happy 19th Birthday Madam Ji ❤️</h1>
+            <p>
+                A small journey through our memories,
+                friendship, laughter, photos and moments.
+            </p>
+
+            <button onclick="startSurprise()">
+                Open Your Surprise 🎁
+            </button>
+        </div>
+    </div>
+
+    <!-- Memory Section -->
+    <div id="memorySection" style="display:none;">
+
+        <div class="memory-card">
+
+            <img id="memoryImage"
+                 src="images/photo1.jpg"
+                 alt="Memory Photo">
+
+            <p id="memoryText"></p>
+
+            <button onclick="nextMemory()">
+                Next →
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Final Page -->
+    <div id="finalPage" style="display:none;">
+
+        <h1>Happy 19th Birthday Sushma Ji ❤️</h1>
+
+        <p>
+            Thank you for being part of my college journey.
+            Thank you for every memory, every photo,
+            every conversation and every laugh.
+        </p>
+
+        <!-- Collage -->
+        <div class="gallery">
+            <img src="images/photo20.jpg">
+            <img src="images/photo21.jpg">
+            <img src="images/photo22.jpg">
+            <img src="images/photo23.jpg">
+            <img src="images/photo24.jpg">
+            <img src="images/photo25.jpg">
+        </div>
+
+        <!-- Final Video -->
+        <video controls width="90%" poster="images/photo25.jpg">
+            <source src="videos/final.mp4" type="video/mp4">
+        </video>
+
+        <h2>
+            One day you were just a classmate,
+            and before I realized it,
+            you became one of the closest people
+            in my college journey. ❤️
+        </h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
