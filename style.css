@@ -129,9 +129,7 @@ button:hover{
 
 .gallery img{
     width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
+    height:auto;
 }
 
 video{
