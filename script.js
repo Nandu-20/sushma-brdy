@@ -180,12 +180,15 @@ document.getElementById("memoryImage").src = memories[current].image;
 }
 
 function nextMemory() {
-current++;
+    current++;
 
-if (current < memories.length) {
-showMemory();
-} else {
-document.getElementById("memorySection").style.display = "none";
-document.getElementById("finalPage").style.display = "block";
-}
+    if (current < memories.length) {
+        showMemory();
+    } else {
+        document.getElementById("memorySection").style.display = "none";
+        document.getElementById("finalPage").style.display = "block";
+
+        const video = document.getElementById("birthdayVideo");
+        video.play();
+    }
 }
